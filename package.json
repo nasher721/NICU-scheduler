@@ -1,0 +1,27 @@
+{
+  "name": "connecteam-scheduler-reconstruction",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test model.test.js workbook.test.js server.test.js scheduling.test.js",
+    "test:workbook": "node --test workbook.test.js server.test.js",
+    "test:browser": "node browser.test.mjs && node scheduling.browser.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "yauzl": "3.4.0"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

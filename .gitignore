@@ -1,0 +1,16 @@
+node_modules/
+.data/
+test-results/
+*.sqlite*
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+.env
+.env.*
+!.env.example
+docs/WORKBOOK_ANALYSIS.md
+docs/SCHEDULING_APP_PLAN.md
+docs/REVIEW_GUIDE.md
+VERIFICATION.md
